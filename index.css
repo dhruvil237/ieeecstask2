@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(2, 0, 20);
+}
+#jjk_logo {
+    margin: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.cards {
+    background-color: #000000;
+    margin: 10px;
+    padding: 5px;
+    border: 2px gray;
+    border-style: outset;
+    border-radius: 10px;
+    width: 18rem;
+    height: 22rem;
+    transition: 0.3s all ease-in-out;
+}
+
+.cards:hover {
+    transform: scale( 1.1 );
+    border-style: double;
+}
+
+.static {
+    display: flex;
+    position:absolute;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: grey;
+    width: 12rem;
+    height: 12rem;
+    transition: 0.2s all ease-in-out;
+}
+  
+.static:hover {
+    opacity:0;
+}
+.active{
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgb(2, 0, 20);
+    width: 12rem;
+    height: 12rem;
+    transition: 0.2s all ease-in-out;
+}
+.imgcontainer {
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pcontent {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+@media all and ( max-width:950px )  {
+    body {
+        
+        background-color: black;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards {
+        background-color: rgb(2, 0, 20);
+    }
+}
